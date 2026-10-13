@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#722f35" />
+    <meta name="description" content="Il menu di GMI Torino. Scopri i piatti, gli ingredienti e il piacere di ritrovarci a tavola." />
+    <title>Il gusto di stare insieme · GMI Torino</title>
+    <link rel="icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#menu">Vai al menu</a>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a href="#inizio" class="brand" aria-label="GMI Torino, torna all'inizio">
+          <img src="/assets/logo-gmi.png" alt="" width="42" height="48" />
+          <span>GMI <small>TORINO</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Navigazione principale">
+          <a href="#menu">Il menu</a>
+          <a href="#insieme">Chi siamo</a>
+          <a href="#domande">Da sapere</a>
+        </nav>
+        <a class="header-contact" href="mailto:gmitorino@gmail.com">Parliamone <span aria-hidden="true">↗</span></a>
+        <button class="nav-toggle" aria-controls="mobile-navigation" aria-expanded="false" aria-label="Apri la navigazione"><span></span><span></span></button>
+      </div>
+      <nav id="mobile-navigation" class="mobile-nav" aria-label="Navigazione su telefono" hidden>
+        <a href="#menu">Il menu <span aria-hidden="true">↗</span></a>
+        <a href="#insieme">Chi siamo <span aria-hidden="true">↗</span></a>
+        <a href="#domande">Da sapere <span aria-hidden="true">↗</span></a>
+        <a href="mailto:gmitorino@gmail.com">Contattaci <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="inizio">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> GIOVANI MUSULMANI D’ITALIA · TORINO</p>
+          <h1 id="hero-title">Il gusto di<br/>stare <em>insieme.</em></h1>
+          <p class="hero-description">Una tavola, tante storie.<br/>Il nostro modo di condividere sapori,<br class="desktop-break"/> incontri e un po’ di noi.</p>
+          <a class="button button-dark" href="#menu">Scopri il menu <span aria-hidden="true">↓</span></a>
+          <div class="hero-footnote"><span class="line-mark" aria-hidden="true"></span> Fatto per condividere. Pensato per te.</div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo"><img src="/assets/hero-menu.webp" alt="Illustrazione fotografica di schiacciate con verdure su una tavola apparecchiata" width="1536" height="1024" fetchpriority="high" /></div>
+          <div class="hero-stamp" aria-label="Sapori che ci uniscono"><span>SAPORI CHE</span><span class="stamp-star" aria-hidden="true">✳</span><span>CI UNISCONO</span></div>
+          <div class="photo-caption"><span>LA CONVIVIALITÀ È IL NOSTRO INGREDIENTE PREFERITO.</span><span aria-hidden="true">01 / GMI</span></div>
+        </div>
+      </section>
+      <div class="taste-strip" aria-hidden="true"><div>SAPORI AUTENTICI <span>✳</span> STORIE CONDIVISE <span>✳</span> UNA TAVOLA PER INCONTRARSI <span>✳</span> GMI TORINO <span>✳</span></div></div>
+      <section id="menu" class="menu-section wrap" aria-labelledby="menu-title">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">01 — A TAVOLA</p><h2 id="menu-title">Due sapori.<br/><em>Una bella scelta.</em></h2></div>
+          <p>Ingredienti semplici, abbinamenti pieni di carattere.<br/>Scopri cosa rende speciale ogni schiacciata.</p>
+        </div>
+        <div class="menu-toolbar" aria-label="Visualizzazione del menu">
+          <div class="segmented-control" role="group" aria-label="Scegli cosa vedere">
+            <button class="filter-button is-selected" data-filter="all" aria-pressed="true">Tutto il menu <span>02</span></button>
+            <button class="filter-button" data-filter="mediterranea" aria-pressed="false">Mediterranea</button>
+            <button class="filter-button" data-filter="contadina" aria-pressed="false">Contadina</button>
+          </div>
+          <span class="toolbar-note"><span aria-hidden="true">✳</span> Il piacere delle cose buone</span>
+        </div>
+        <div id="dish-list" class="dish-grid"></div>
+        <noscript><div class="noscript-menu"><article><h3>Contadina</h3><p>Rucola, pomodorini datterini e crema di funghi al formaggio Kinara con caglio vegetale.</p></article><article><h3>Mediterranea</h3><p>Ricotta vegana, pomodorini datterini, melanzane alla griglia e formaggio Kinara stagionato con caglio vegetale.</p></article></div></noscript>
+        <p id="menu-announcement" class="sr-only" aria-live="polite"></p>
+        <p class="menu-confirmation">Proposte del menu GMI: la selezione per il prossimo evento è in attesa di conferma. Immagini illustrative.</p>
+        <div class="menu-information reveal"><span class="info-icon" aria-hidden="true">i</span><div><strong>Un’esigenza alimentare? Parliamone.</strong><p>Per allergie, intolleranze o alternative, scrivici prima dell’evento. Ti aiuteremo a conoscere gli ingredienti e le opzioni disponibili.</p></div><a href="mailto:gmitorino@gmail.com?subject=Informazioni%20sul%20menu">Chiedi informazioni <span aria-hidden="true">↗</span></a></div>
+      </section>
+      <section id="insieme" class="together-section" aria-labelledby="together-title">
+        <div class="together-inner wrap">
+          <div class="community-art reveal" aria-hidden="true">
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="art-label label-top">FEDE · CULTURA · COMUNITÀ</div>
+            <svg class="table-art" viewBox="0 0 480 380" fill="none"><ellipse cx="240" cy="206" rx="164" ry="106" fill="#E9D2A7"/><ellipse cx="240" cy="189" rx="164" ry="106" fill="#F8EED7" stroke="#C69660" stroke-width="2"/><ellipse cx="240" cy="189" rx="134" ry="82" stroke="#CEAB77" stroke-width="1.5" stroke-dasharray="4 6"/><circle cx="160" cy="164" r="29" stroke="#722F35" stroke-width="2"/><circle cx="160" cy="164" r="21" stroke="#722F35"/><circle cx="316" cy="209" r="29" stroke="#722F35" stroke-width="2"/><circle cx="316" cy="209" r="21" stroke="#722F35"/><path d="M232 146c-18-22-34-6-24 11l27 28 27-28c10-17-6-33-24-11l-3 4-3-4Z" fill="#722F35"/><path d="M124 143v40m-5-40v13q5 8 10 0v-13m215 44v42m-6-42v15q6 7 12 0v-15" stroke="#722F35" stroke-width="2" stroke-linecap="round"/><path d="M183 94c3-16 7-35 22-33 14 2 7 20 2 35m62 199c-5 16-9 33-24 29-14-3-4-21 0-33M76 201c-17-4-34-5-33-20 1-14 22-8 37-5m322 24c17 2 34 6 31 21-2 14-22 5-35 3" fill="#C69660" stroke="#722F35" stroke-width="2"/><path d="M169 71c-9-20-23-37-11-46 12-9 27 14 38 28m81 262c10 20 26 36 13 46-11 9-28-13-40-25M57 154c-20-9-40-7-40-23s25-11 47-8m351 113c21 10 40 8 39 24-1 16-26 10-47 7" fill="#F8EED7" stroke="#722F35" stroke-width="2"/><path d="m355 89 6-12 5 12 13 5-13 5-5 12-6-12-12-5 12-5ZM83 285l6-12 5 12 13 5-13 5-5 12-6-12-12-5 12-5Z" fill="#C69660"/></svg>
+            <div class="art-label label-bottom">C’È SEMPRE POSTO PER UNA STORIA IN PIÙ.</div>
+          </div>
+          <div class="together-copy reveal"><p class="eyebrow">02 — IL SENSO DI INCONTRARSI</p><h2 id="together-title">Più di un menu.<br/><em>Un momento nostro.</em></h2><p>Siamo la sezione torinese dei Giovani Musulmani d’Italia. Generazioni, culture e percorsi diversi, uniti dalla fede e dal desiderio di costruire comunità.</p><p>Crediamo negli incontri che diventano dialogo e nelle esperienze che ci fanno crescere insieme. Anche attorno a una tavola.</p><a class="text-link" href="https://gmitalia.org/" target="_blank" rel="noopener noreferrer">Conosci GMI <span aria-hidden="true">↗</span><span class="sr-only"> (si apre in una nuova scheda)</span></a></div>
+        </div>
+      </section>
+      <section id="evento" class="event-section wrap reveal" aria-labelledby="event-title"><div><p class="eyebrow">IL PROSSIMO INCONTRO</p><h2 id="event-title">Ci ritroviamo<br/><em>presto, a tavola.</em></h2></div><div class="event-details"><span class="status-pill"><span></span> DETTAGLI IN ARRIVO</span><p>Nome, data e luogo del nuovo evento saranno pubblicati qui.</p><a class="text-link" href="https://instagram.com/gmi.torino" target="_blank" rel="noopener noreferrer">Segui gli aggiornamenti <span aria-hidden="true">↗</span><span class="sr-only"> su Instagram (nuova scheda)</span></a></div></section>
+      <section id="domande" class="faq-section wrap" aria-labelledby="faq-title"><div class="faq-heading reveal"><p class="eyebrow">03 — QUALCHE RISPOSTA</p><h2 id="faq-title">Buono a <em>sapersi.</em></h2><p>Per scegliere con tranquillità.</p></div><div class="faq-list reveal">
+        <details><summary>Come posso conoscere gli ingredienti?<span aria-hidden="true">+</span></summary><div><p>Apri «Ingredienti e dettagli» nella scheda di ciascun piatto. Per allergie o intolleranze, contatta gli organizzatori: l’elenco sul sito non sostituisce le informazioni complete su allergeni e preparazione.</p></div></details>
+        <details><summary>Ci sono alternative per esigenze alimentari?<span aria-hidden="true">+</span></summary><div><p>Nel menu precedente era disponibile, su richiesta e con posti limitati, un’alternativa senza lattosio con mozzarella a caglio microbico. Le opzioni per il nuovo evento sono da confermare: scrivici prima di partecipare.</p></div></details>
+        <details><summary>Il menu è incluso nella partecipazione?<span aria-hidden="true">+</span></summary><div><p>Per il nuovo evento, quota di partecipazione e modalità del pranzo saranno comunicate insieme ai dettagli dell’incontro.</p></div></details>
+        <details><summary>Come contatto GMI Torino?<span aria-hidden="true">+</span></summary><div><p>Scrivici a <a href="mailto:gmitorino@gmail.com">gmitorino@gmail.com</a> oppure visita il profilo Instagram <a href="https://instagram.com/gmi.torino" target="_blank" rel="noopener noreferrer">@gmi.torino<span class="sr-only"> (nuova scheda)</span></a>.</p></div></details>
+      </div></section>
+      <section class="closing-section reveal"><div class="wrap closing-inner"><p class="eyebrow">LE COSE BELLE SI CONDIVIDONO</p><p class="closing-title">Ti aspettiamo.<br/><em>Porta la tua storia.</em></p><a class="button button-cream" href="mailto:gmitorino@gmail.com">Ci sentiamo? <span aria-hidden="true">↗</span></a><span class="closing-star" aria-hidden="true">✳</span></div></section>
+    </main>
+    <footer class="site-footer wrap"><a class="brand footer-brand" href="#inizio" aria-label="GMI Torino, torna all'inizio"><img src="/assets/logo-gmi.png" width="34" height="39" alt=""/><span>GMI <small>TORINO</small></span></a><p>Giovani Musulmani d’Italia · Sezione Torino</p><div><a href="https://instagram.com/gmi.torino" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span><span class="sr-only"> (nuova scheda)</span></a><a href="mailto:gmitorino@gmail.com">Email <span aria-hidden="true">↗</span></a></div><span class="copyright">© <span id="current-year">2026</span> GMI Torino</span></footer>
+    <div class="mobile-menu-bar"><a href="#menu">Il menu <span aria-hidden="true">↑</span></a><a href="mailto:gmitorino@gmail.com" aria-label="Scrivi a GMI Torino">Contattaci <span aria-hidden="true">↗</span></a></div>
+    <dialog id="dish-dialog" class="dish-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Chiudi dettagli">×</button><div id="dialog-content"></div></dialog>
+  </body>
+</html>
